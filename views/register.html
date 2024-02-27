@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../public/css/register.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creá tu cuenta</title>
+</head>
+
+<body>
+    <!--ENCABEZADO-->
+    <header>
+        <div class="main-header">
+            <a href="/view/home.html"><img src="/public/img/logo-mercado-liebre.svg" alt=""></a>
+        </div>
+    </header>
+
+    <!--CUERPO-->
+    <main>
+        <div class="cont-contenedor-formulario">
+            <form action="/register.html" method="post">
+                <div class="cont-name">
+                    <label>
+                        <input type="text" placeholder="Nombre y Apellido" required>
+                    </label>
+                </div>
+                <div class="cont-username">
+                    <label>
+                        <input type="text" placeholder="Nombre de usuario" required>
+                    </label>
+                </div>
+                <div class="cont-email">
+                    <label>
+                        <input type="email" placeholder="E-mail " required>
+                    </label>
+                </div>
+                <div class="cont-date-birth">
+                    <label>
+                        <h4>Fecha de nacimiento </h4>
+                        <input type="date" required>
+                    </label>
+                </div>
+                <div class="cont-adress">
+                    <label>
+                        <input type="text" placeholder="Domicilio" required>
+                    </label>
+                </div>
+                <h4>Perfil del usuario</h4>
+                <div class="cont-profile-container">
+                    <div class="cont-user-profile">
+                        <label>
+                            <input type="radio" name="tipoPerfil">Quiero vender
+                        </label>
+                        <label>
+                            <input type="radio" name="tipoPerfil">Quiero comprar
+                        </label>
+                    </div>
+                </div>
+                <h4>Intereses</h4>
+                <div class="cont-categories-interests">
+
+                    <input type="checkbox" name="interes" value="electro"><label for="electro">Electro</label>
+
+                    <input type="checkbox" name="interes" value="moda"><label for="moda">Moda</label>
+
+                    <input type="checkbox" name="interes" value="hogar"><label for="hogar">Hogar</label>
+
+                    <input type="checkbox" name="interes" value="jugueteria"><label for="jugueteria">Juguetería</label>
+
+                    <input type="checkbox" name="interes" value="vidaSana"><label for="vidaSana">Vida Sana</label>
+
+                </div>
+                <div class="cont-user-pic">
+                    <label>
+                        <h4>Sonrie :)</h4>
+                        <input type="file" accept=".jpg , .png">
+                    </label>
+                </div>
+                <div class="cont-password">
+                    <label>
+                        <input type="password" placeholder="Creá una contraseña" required>
+                    </label>
+                </div>
+                <div class="cont-confirm-password">
+                    <label>
+                        <input type="password" placeholder="Repite tu contraseña" required>
+                    </label>
+                </div>
+                <div class="cont-submit">
+                    <label>
+                        <a href="/home.html"><input type="submit"></a>
+                    </label>
+                </div>
+                <div class="cont-submit">
+                    <label>
+                        <input type="reset">
+                    </label>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

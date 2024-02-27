@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #eac926;
+}
+
+.main__header-top-bar {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.logo {
+    width: 40%;
+    padding: 5px;
+}
+
+.custom-search-bar {
+    width: 70%;
+    padding: 5px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+}
+
+.container-search-bar {
+    width: 50%;
+}
+
+.container-search-bar input {
+    width: 70%;
+    padding: 5px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    background-color: white;
+    padding: 6px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+    align-items: center;
+    margin: -6px;
+}
+
+.custom-copy-header {
+    min-width: 150px;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    font-weight: 5;
+    font-size: 12px;
+    flex: 1;
+}
+
+.custom-container-nav {
+    display: none;
+    width: 100%;
+}
+
+.custom-container-nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.custom-container-nav a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0px;
+    font-size: 17px;
+}
+
+.custom-burger-menu {
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+.custom-burger-menu i {
+    font-size: large;
+    background-color: #1259c3;
+    padding: 8px;
+    border-radius: 10%;
+}
+
+.custom-container-form {
+    height: 60vh;
+    background-color: #ebebeb;
+}
+
+.custom-container-form input {
+    width: 70%;
+    padding: 5px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+}
+
+.custom-username,
+.custom-password {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+
+.custom-submit {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.custom-submit input {
+    background-color: #1259c3;
+    border: #ebebeb;
+    border-radius: 3px;
+    color: white;
+    padding: 10px;
+}
+
+.footer i {
+    color: #1259c3;
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.footer {
+    text-align: center;
+}
+
+@media (min-width: 361px) {
+    .logo {
+        width: 33%;
+    }
+    .container-search-bar {
+        width: 33%;
+    }
+    .custom-copy-header {
+        width: 33%;
+        font-size: 15px;
+    }
+    .custom-burger-menu {
+        display: none;
+    }
+    .custom-container-nav {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .rigth__nav-bar {
+        display: flex;
+        align-items: center;
+    }
+    .left__nav-bar {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (min-width: 769px) {
+    .main__header-top-bar {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .container-search-bar {
+        margin: 30px;
+    }
+    .custom-container-nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .custom-container-nav ul {
+        display: flex;
+    }
+    .custom-container-nav li {
+        margin: 5px;
+    }
+    .rigth__nav-bar {
+        display: flex;
+    }
+    .left__nav-bar {
+        display: flex;
+    }
+}
+
+@media (min-width: 996px) {
+    .logo {
+        width: 33%;
+        margin: 20px;
+    }
+    .container-search-bar {
+        width: 33%;
+        margin: 20px;
+    }
+    .custom-copy-header  {
+        width: 33.3%;
+    }
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .pago, .envio, .seguridad {
+        margin: 10px;
+        padding: 15px;
+        width: 25%
+    }
+    .copy {
+        width: 35%;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1100px) {
+    .main__header-top-bar,
+    .custom-container-nav,
+    .custom-form {
+        max-width: 1500px;
+        margin: auto;
+    }
+}
