@@ -18,11 +18,11 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(viewsPath, 'home.html'));
 });
 
-app.get('/views/login.html', (req, res) => {
+app.get('/login.html', (req, res) => {
     res.sendFile(path.join(viewsPath, 'login.html'));
 });
 
-app.post('/views/login.html', (req, res) => { 
+app.post('/login.html', (req, res) => { 
     res.sendFile(path.join(viewsPath, 'home.html'));
 });
 
