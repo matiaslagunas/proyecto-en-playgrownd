@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const port = process.env.PORT || 3030;
-const viewsPath = path.join(__dirname, 'view');
+const viewsPath = path.join(__dirname, 'views');
 
 app.use(express.static('public'));
 
@@ -18,11 +18,11 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(viewsPath, 'home.html'));
 });
 
-app.get('/view/login.html', (req, res) => {
+app.get('/views/login.html', (req, res) => {
     res.sendFile(path.join(viewsPath, 'login.html'));
 });
 
-app.post('/view/login.html', (req, res) => { 
+app.post('/views/login.html', (req, res) => { 
     res.sendFile(path.join(viewsPath, 'home.html'));
 });
 
