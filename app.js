@@ -15,22 +15,22 @@ app.listen(port, () => {
 
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(viewsPath, 'home.html'));
+    res.sendFile(path.join(viewsPath, '/views/home.html'));
 });
 
 app.get('/login.html', (req, res) => {
-    res.sendFile(path.join(viewsPath, 'login.html'));
+    res.sendFile(path.join(viewsPath, '/views/login.html'));
 });
 
 app.post('/login.html', (req, res) => { 
-    res.sendFile(path.join(viewsPath, 'home.html'));
+    res.sendFile(path.join(viewsPath, '/views/home.html'));
 });
 
 app.get('/register.html', (req, res) => {
-    res.sendFile(path.join(viewsPath, 'register.html'));
+    res.sendFile(path.join(viewsPath, '/views/register.html'));
 });
 
 app.post('/register.html', (req, res) => {
-    res.sendFile(path.join(viewsPath, 'home.html'));
+    res.sendFile(path.join(viewsPath, '/views/home.html'));
 });
 
