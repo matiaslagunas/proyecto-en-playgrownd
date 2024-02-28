@@ -213,11 +213,16 @@ label {
     }
     .footer {
         display: flex;
-        flex-wrap: wrap;
+        
         align-items: center;
         justify-content: space-around;
     }
-    .pago, .envio, .seguridad {
+    section.custom-footer{
+        display: flex;      
+        align-items: center;
+        justify-content: space-around;
+    }
+    .custom-pago, .custom-envio, .custom-seguridad {
         margin: 10px;
         padding: 15px;
         width: 25%
